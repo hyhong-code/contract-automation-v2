@@ -10,7 +10,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../UI/Title/Title";
 
 const relationshipTip = (
-  <span style={{ color: "white", fontSize: "14px"}}>
+  <span style={{ color: "black", fontSize: "14px"}}>
     <b>How does relationship type affect my contract?</b> <br />
     Specifying working relationship type between parties in the NDA helps to establish the purpose of the Agreement.
   </span>
@@ -98,16 +98,13 @@ const PartiesRelationship = (props) => {
 
           {/*********  Steps  *********/}
           <div style={{ marginTop: "90px" }}>
-            <div className="form-end"></div>
-            <div style={{ marginTop: "15px" }}>
+            <div className="step-container">
               <button className="Back-Button" onClick={onBackStep}>
                 Back
               </button>
-              <span className="btn">
                 <button className="Button" type="submit">
                   Next
                 </button>
-              </span>
             </div>
           </div>
         </div>

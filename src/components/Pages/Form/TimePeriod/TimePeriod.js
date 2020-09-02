@@ -185,8 +185,7 @@ const TimePeriod = (props) => {
 
               {/*********  Steps  *********/}
               <div style={{ width: "72%", marginTop: "15px" }}>
-                <div className="form-end"></div>
-                <div style={{ marginTop: "15px" }}>
+                <div className="step-container" >
                   <button className="Back-Button" onClick={onBackStep}>
                     Back
                   </button>
@@ -207,7 +206,7 @@ const TimePeriod = (props) => {
 export default TimePeriod;
 
 const timePeriodTip2 = (
-  <span style={{ color: "white", fontSize: "14px" }}>
+  <span style={{ color: "black", fontSize: "14px" }}>
     <b>What should the duration of my contract be?</b>
     <br /> The usual time of protection for ordinary confidential information is
     2 to 5 years which is what we suggest.
@@ -215,7 +214,7 @@ const timePeriodTip2 = (
 );
 
 const timePeriodTip1 = (
-  <span style={{ color: "white", fontSize: "14px" }}>
+  <span style={{ color: "black", fontSize: "14px" }}>
     <b>What does "survive its termination" mean?</b>
     <br /> To survive the termination of the Agreement means that there is no
     end date to keep the information secret.

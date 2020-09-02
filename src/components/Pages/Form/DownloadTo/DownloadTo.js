@@ -83,8 +83,7 @@ const DownloadTo = (props) => {
 
           {/*********  Steps  *********/}
           <div style={{ marginTop: "100px" }}>
-            <div className="form-end"></div>
-            <div style={{ marginTop: "15px" }}>
+            <div className="step-container" >
               <button className="Back-Button" onClick={onBackStep}>
                 Back
               </button>

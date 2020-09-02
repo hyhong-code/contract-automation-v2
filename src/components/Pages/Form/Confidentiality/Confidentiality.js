@@ -62,6 +62,7 @@ const Confidentiality = (props) => {
                 type="radio"
                 name="confidentialityAll"
                 value="true"
+
                 ref={register({ required: "This is required." })}
                 defaultChecked={state.formDetails.formType === "Everything"}
               />
@@ -107,11 +108,11 @@ const Confidentiality = (props) => {
                   render={(props) => (
                     <Checkbox
                       style={{
-                        color: "#e07c00",
+                        color: "#49208d",
                       }}
                       onChange={(e) => props.onChange(e.target.checked)}
                       checked={props.value}
-                      size='small'
+               
                     />
                   )}
                 />
@@ -128,11 +129,11 @@ const Confidentiality = (props) => {
                   render={(props) => (
                     <Checkbox
                       style={{
-                        color: "#e07c00",
+                        color: "#49208d",
                       }}
                       onChange={(e) => props.onChange(e.target.checked)}
                       checked={props.value}
-                      size='small'
+               
                     />
                   )}
                 />
@@ -148,11 +149,11 @@ const Confidentiality = (props) => {
                 render={(props) => (
                   <Checkbox
                     style={{
-                      color: "#e07c00",
+                      color: "#49208d",
                     }}
                     onChange={(e) => props.onChange(e.target.checked)}
                     checked={props.value}
-                    size='small'
+             
                   />
                 )}
               />
@@ -169,11 +170,11 @@ const Confidentiality = (props) => {
                 render={(props) => (
                   <Checkbox
                     style={{
-                      color: "#e07c00",
+                      color: "#49208d",
                     }}
                     onChange={(e) => props.onChange(e.target.checked)}
                     checked={props.value}
-                    size='small'
+             
                   />
                 )}
               />
@@ -189,18 +190,18 @@ const Confidentiality = (props) => {
                 render={(props) => (
                   <Checkbox
                     style={{
-                      color: "#e07c00",
+                      color: "#49208d",
                     }}
                     onChange={(e) => props.onChange(e.target.checked)}
                     checked={props.value}
-                    size='small'
+             
                   />
                 )}
               />
               }
               label={<span style={{ fontSize: '14px' }}>Is disclosed by Receiving Party with Disclosing Party's prior written approval.</span>}
             />
-
+            <br/>
             <FormControlLabel
               control={
                 <Controller
@@ -209,27 +210,29 @@ const Confidentiality = (props) => {
                 render={(props) => (
                   <Checkbox
                     style={{
-                      color: "#e07c00",
+                      color: "#49208d",
+                      marginBottom: '0'
                     }}
                     onChange={(e) => props.onChange(e.target.checked)}
                     checked={props.value}
-                    size='small'
+             
                   />
                 )}
               />
               }
-              label={<span style={{ fontSize: '14px' }}>Other exceptions</span>}
+              label={<span style={{ fontSize: '14px', marginBottom: '0' }}>Other exceptions</span>}
             />
+            <br/>
             <Controller
               as={
                 <TextField
                   label="E.g. widely used programming practices or algorithms."
-                  style={{ marginLeft: "30px", width: "90%"}}
+                  style={{ marginLeft: "30px", width: "50%"}}
                   inputRef={register}
                   bordered={false}
                   InputLabelProps={{style: {fontSize: 13}}}
                   InputProps={{style: {fontSize: 14}}} 
-                  size='small'
+           
                 />
               }
               control={control}
@@ -266,18 +269,16 @@ const Confidentiality = (props) => {
 
           {/*********  Steps  *********/}
           <div style={{ marginTop: "10px" }}>
-            <div className="form-end"></div>
-            <div style={{ marginTop: "15px", marginBottom: "50px" }}>
+            <div className="step-container">
               <button className="Back-Button" onClick={onBackStep}>
                 Back
               </button>
-              <span className="btn">
                 <button className="Button" type="submit">
                   Next
                 </button>
-              </span>
             </div>
           </div>
+
         </div>
       </form>
       </Col>

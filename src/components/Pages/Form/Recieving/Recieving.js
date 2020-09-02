@@ -231,20 +231,15 @@ const Recieving = (props) => {
           </div>
 
           {/*********  Steps  *********/}
-          <div>
-            <div className="form-end"></div>
-            <div style={{ marginTop: "15px" }}>
+            <div className="step-container" >
               <button className="Back-Button" onClick={onBackStep}>
                 Back
               </button>
-              <span className="btn">
                 <button className="Button" type="submit">
                   Next
                 </button>
-              </span>
             </div>
           </div>
-        </div>
       </form>
       </Col>
       </Row>
@@ -253,7 +248,7 @@ const Recieving = (props) => {
 };
 
 const recipientTip = (
-  <span style={{ color: "white", fontSize: "14px" }}>
+  <span style={{ color: "black", fontSize: "14px" }}>
     <b>Who is the Recipient or the Recieving Party?</b>
     <br /> Receiving Party is a party who receives confidential information and is obligated to keep it secret E.g. employee
   </span>

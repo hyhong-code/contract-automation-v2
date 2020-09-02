@@ -259,20 +259,15 @@ const Disclosing = (props) => {
               </div>
 
               {/*********  Steps  *********/}
-              <div>
-                <div className="form-end"></div>
-                <div style={{ marginTop: "15px", marginBottom: "50px" }}>
+                <div className="step-container" >
                   <button className="Back-Button" onClick={onBackStep}>
                     Back
                   </button>
-                  <span className="btn">
                     <button className="Button" type="submit">
                       Next
                     </button>
-                  </span>
                 </div>
               </div>
-            </div>
           </form>
         </Col>
       </Row>
@@ -281,7 +276,7 @@ const Disclosing = (props) => {
 };
 
 const discloserTip = (
-  <span style={{ color: "white", fontSize: "13px" }}>
+  <span style={{ color: "black", fontSize: "13px" }}>
     <b>Who is the Discolser/Disclosing Party?</b>
     <br />
     Disclosing party is a person disclosing confidential information to the

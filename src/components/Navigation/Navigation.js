@@ -7,8 +7,6 @@ import path from "../../utils/path";
 export default function Navigation() {
   const location = useLocation();
 
-  console.log("re-rendered");
-
   return (
     <div className="side-nav">
       <nav>

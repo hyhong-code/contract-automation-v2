@@ -89,14 +89,14 @@ createStore({
 function App() {
   // Hook for toggling between 2 Navbars depends on what page user is on
   const isMainPageHeader = useHeaderToggle();
-
   useRedirect();
 
   return (
     <StateMachineProvider>
       <DevTool />
       {isMainPageHeader ? <MainPageNavbar /> : <Header />}
-      <Sidebar />
+      {!isMainPageHeader && <Sidebar />}
+
       <Switch>
         {/* <Route exact path="/" component={LandingPage} /> */}
         <Route exact path={path("/")} component={MainPage} />

@@ -36,11 +36,11 @@ const OtherInformation = (props) => {
       <Title />
         <div className="form-container">
           {/*********  Other Information *********/}
-          <div style={{ marginBottom: "40px" }}>
+          <div style={{ marginBottom: "40px" , marginTop: "250px"}}>
             <h1 className="form-question" style={{ color: "#868383"}}>
               Is there any other information that should be included in the
               contract?
-              <Tooltip placement="right" tips={otherInfo} />
+              <Tooltip placement="bottomRight" tips={otherInfo} />
             </h1>
 
             <Controller
@@ -62,17 +62,14 @@ const OtherInformation = (props) => {
           </div>
 
           {/*********  Steps  *********/}
-          <div style={{ marginTop: "300px" }}>
-            <div className="form-end"></div>
-            <div style={{ marginTop: "15px" }}>
+          <div style={{ marginTop: "100px" }}>
+            <div className="step-container" >
               <button className="Back-Button" onClick={onBackStep}>
                 Back
               </button>
-              <span className="btn">
                 <button className="Button" type="submit">
                   Next
                 </button>
-              </span>
             </div>
           </div>
 
@@ -86,7 +83,7 @@ const OtherInformation = (props) => {
 };
 
 const otherInfo = (
-  <span style={{ color: "white", fontSize: "14px" }}>
+  <span style={{ color: "black", fontSize: "14px" }}>
     <b>What can be included in "other information"?</b> <br/>
     You can include specific kinds of information to which you would like to extend a protection.
   </span>

@@ -17,7 +17,7 @@ import Navigation from "../../../Navigation/Navigation";
 const { Option } = Select;
 
 const tip1 = (
-  <span style={{ color: "white", fontSize: "14px" }}>
+  <span style={{ color: "black", fontSize: "14px" }}>
     <b>How is the form created?</b> <br />
     Your response to each question determines what goes into your customized
     contract. Make sure to fill out all fields so we can help you put everything
@@ -29,7 +29,7 @@ const tip1 = (
 );
 
 const tip2 = (
-  <span style={{ color: "white", fontSize: "14px" }}>
+  <span style={{ color: "black", fontSize: "14px" }}>
     <b>Which jurisdiction am I under?</b> <br />
     Parties usually prefer that the jurisdiction be based on their location or
     the location of their headquarters. It can save the time and the money to
@@ -38,9 +38,8 @@ const tip2 = (
 );
 
 const tip3 = (
-  <span style={{ color: "white", fontSize: "14px" }}>
+  <span style={{ color: "black", fontSize: "14px" }}>
     Click <b>Next</b> to save your entries!
-    <Tooltip />
   </span>
 );
 
@@ -231,15 +230,12 @@ export default () => {
                 </div>
 
                 {/*********  Steps  *********/}
-                <div>
-                  <div className="form-end"></div>
-                  <div style={{ marginTop: "10px" }}>
+                  <div className="step-container">
                     <button className="Back-Button" onClick={onBackStep}>
                       Back
                     </button>
                     <span className="btn">
                       <Popover
-                        style={{ backgroundColor: "red" }}
                         placement="topLeft"
                         defaultVisible={true}
                         content={tip3}
@@ -250,7 +246,6 @@ export default () => {
                       </Popover>
                     </span>
                   </div>
-                </div>
               </div>
             </form>
           </Col>

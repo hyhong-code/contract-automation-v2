@@ -1,0 +1,26 @@
+.topbar {
+  height: 5.625rem;
+  z-index: 0;
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 7.6rem;
+  padding-right: 9rem;
+
+  .topbar__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333333;
+  }
+
+  .topbar__greeting {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #000000;
+
+    .topbar__greeting__icon {
+      font-size: 0.9rem;
+    }
+  }
+}

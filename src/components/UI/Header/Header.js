@@ -1,11 +1,14 @@
 import React from "react";
-import "./Header.css";
-import { Navbar} from "react-bootstrap";
+import "./Header.scss";
 
 export default function Header() {
   return (
-    <Navbar className="header" expand="xl">
-      <Navbar.Text className="header-text">Contract Generator</Navbar.Text>
-    </Navbar>
+    <nav className="topbar">
+      <h3 className="topbar__title">Forms</h3>
+      <h4 className="topbar__greeting">
+        Welcome back, Rachel{" "}
+        <i class="topbar__greeting__icon fas fa-chevron-down"></i>
+      </h4>
+    </nav>
   );
 }

@@ -22,6 +22,7 @@ import PDF from "./components/Pages/Form/PDF/PDF";
 import Complete from "./components/Pages/Form/Complete/Complete";
 import path from "./utils/path";
 
+import Sidebar from "./components/Navigation/Sidebar";
 import MainPage from "./components/Pages/MainPage/MainPage";
 
 createStore({
@@ -95,6 +96,7 @@ function App() {
     <StateMachineProvider>
       <DevTool />
       {isMainPageHeader ? <MainPageNavbar /> : <Header />}
+      <Sidebar />
       <Switch>
         {/* <Route exact path="/" component={LandingPage} /> */}
         <Route exact path={path("/")} component={MainPage} />

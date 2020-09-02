@@ -17,7 +17,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 .Button {
-  background-color: #e07c00;
+  background-color: #49208d;
   border: none;
   outline: none;
   cursor: pointer;
@@ -38,7 +38,7 @@
   outline: none;
   cursor: pointer;
   border-radius: 30px;
-  color: #e07c00;
+  color: #49208d;
   font-size: 17px;
   width: 130px;
   height: 58.3px;

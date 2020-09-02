@@ -10,14 +10,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../UI/Title/Title";
 
 const confidentialTip = (
-  <span style={{ color: "white", fontSize: "14px" }}>
+  <span style={{ color: "black", fontSize: "14px" }}>
     <b>What does confidentiality mean? </b> <br />
     Confidentiality means that the recipient will not share the information that they have received with anyone else. We suggest selecting "everything" to include ample protection.
   </span>
 );
 
 const exceptionTip = (
-  <span style={{ color: "white", fontSize: "14px" }}>
+  <span style={{ color: "black", fontSize: "14px" }}>
     <b>All of the exceptions listed here are usually included in all NDA’s.</b> <br/> If you wish, you can add other exceptions here.
   </span>
 );

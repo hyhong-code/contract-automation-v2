@@ -77,7 +77,7 @@ export default () => {
                     This Non-Disclosure Agreement does not cover healthcare
                     personnel, employees and professsionals who have access to
                     medical information.
-                    <Tooltip placement="right" visible={true} tips={tip1} />
+                    {/* <Tooltip placement="right" visible={true} tips={tip1} /> */}
                   </h1>
                   {errors.formType && (
                     <p className="required">This is required.</p>

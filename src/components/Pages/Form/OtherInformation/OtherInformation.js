@@ -38,11 +38,11 @@ const OtherInformation = (props) => {
             <Title />
             <div className="form-container">
               {/*********  Other Information *********/}
-              <div style={{ marginBottom: "40px", marginTop: "250px" }}>
+              <div style={{ marginBottom: "40px", marginTop: "150px" }}>
                 <h1 className="form-question" style={{ color: "#868383" }}>
                   Is there any other information that should be included in the
                   contract?
-                  <Tooltip placement="bottomRight" tips={otherInfo} />
+                  <Tooltip placement="bottomLeft" tips={otherInfo} />
                 </h1>
 
                 <Controller

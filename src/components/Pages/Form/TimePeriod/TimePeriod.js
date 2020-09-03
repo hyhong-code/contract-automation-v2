@@ -179,8 +179,8 @@ const TimePeriod = (props) => {
           </div> */}
 
               {/*********  Steps  *********/}
-              <div style={{ width: "72%", marginTop: "15px" }}>
-                <div className="step-container">
+              <div>
+                <div className="step-container" >
                   <button className="Back-Button" onClick={onBackStep}>
                     Back
                   </button>

@@ -67,7 +67,7 @@ export default () => {
           <Col xs={3}>
             <Navigation />
           </Col>
-          <Col>
+          <Col xs={{ span: 8, offset: 1 }}>
             <form onSubmit={handleSubmit(onNextStep)}>
               <Title />
               <div className="form-container">
@@ -155,7 +155,7 @@ export default () => {
                   <h1 className="form-question">
                     Under which state jurisdiction should the contract be
                     created?
-                    <Tooltip placement="right" tips={tip2} />
+                    <Tooltip placement="top" tips={tip2} />
                   </h1>
                   {errors.state && (
                     <p className="required">This is required.</p>
@@ -230,22 +230,22 @@ export default () => {
                 </div>
 
                 {/*********  Steps  *********/}
-                  <div className="step-container">
-                    <button className="Back-Button" onClick={onBackStep}>
-                      Back
-                    </button>
-                    <span className="btn">
-                      <Popover
-                        placement="topLeft"
-                        defaultVisible={true}
-                        content={tip3}
-                      >
-                        <button className="Button" type="submit">
-                          Next
-                        </button>
-                      </Popover>
-                    </span>
-                  </div>
+                <div className="step-container">
+                  <button className="Back-Button" onClick={onBackStep}>
+                    Back
+                  </button>
+                  <span className="btn">
+                    <Popover
+                      placement="topLeft"
+                      defaultVisible={true}
+                      content={tip3}
+                    >
+                      <button className="Button" type="submit">
+                        Next
+                      </button>
+                    </Popover>
+                  </span>
+                </div>
               </div>
             </form>
           </Col>

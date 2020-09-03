@@ -37,7 +37,7 @@ const Disclosing = (props) => {
           {" "}
           <Navigation />
         </Col>
-        <Col>
+        <Col xs={{ span: 8, offset: 1 }}>
           <form onSubmit={handleSubmit(onNextStep)}>
             <Title />
             <div className="form-container">
@@ -259,15 +259,15 @@ const Disclosing = (props) => {
               </div>
 
               {/*********  Steps  *********/}
-                <div className="step-container" >
-                  <button className="Back-Button" onClick={onBackStep}>
-                    Back
-                  </button>
-                    <button className="Button" type="submit">
-                      Next
-                    </button>
-                </div>
+              <div className="step-container">
+                <button className="Back-Button" onClick={onBackStep}>
+                  Back
+                </button>
+                <button className="Button" type="submit">
+                  Next
+                </button>
               </div>
+            </div>
           </form>
         </Col>
       </Row>

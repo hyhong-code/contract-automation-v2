@@ -19,15 +19,13 @@ const TimePeriod = (props) => {
   const [isYearRule, setIsYearRule] = useState(false);
   const [isOccurrenceRule, setIsOccurrenceRule] = useState(false);
 
-  const checkYearsRequired = () =>{
-      setIsYearRule(true)
-  }
+  const checkYearsRequired = () => {
+    setIsYearRule(true);
+  };
 
-
-  const checkOccurenceRequired = () =>{
-    setIsOccurrenceRule(true)
-
-  }
+  const checkOccurenceRequired = () => {
+    setIsOccurrenceRule(true);
+  };
   const onNextStep = (data) => {
     action(data);
     push("/downloadTo");
@@ -39,15 +37,13 @@ const TimePeriod = (props) => {
     push("/otherInformation");
   };
 
-
   return (
     <Container>
       <Row>
         <Col xs={3}>
           <Navigation />
         </Col>
-
-        <Col>
+        <Col xs={{ span: 8, offset: 1 }}>
           <form onSubmit={handleSubmit(onNextStep)}>
             <Title />
             <div className="form-container">
@@ -84,7 +80,7 @@ const TimePeriod = (props) => {
                     type="radio"
                     name="timePeriod"
                     value="years"
-                    ref={register({ required: true})}
+                    ref={register({ required: true })}
                     onClick={checkYearsRequired}
                   />
                   <label style={{ marginLeft: "10px", fontSize: "14px" }}>
@@ -96,9 +92,8 @@ const TimePeriod = (props) => {
                     </p>
                   )}
 
-
                   <Controller
-                    rules={{ required:  isYearRule  }}
+                    rules={{ required: isYearRule }}
                     as={
                       <TextField
                         label="Years"
@@ -141,7 +136,7 @@ const TimePeriod = (props) => {
                     </p>
                   )}
                   <Controller
-                  rules={{ required:  isOccurrenceRule  }}
+                    rules={{ required: isOccurrenceRule }}
                     as={
                       <TextField
                         label="Ex. end of employment"

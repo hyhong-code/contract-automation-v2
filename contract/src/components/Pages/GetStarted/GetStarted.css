@@ -44,10 +44,12 @@
 }
 
 .get-started__img {
+  z-index: -1;
   width: 28rem;
   left: 3.28rem;
   position: absolute;
   bottom: 0;
+  opacity: 0.75;
 }
 
 .get-started__form .get-started__btn {

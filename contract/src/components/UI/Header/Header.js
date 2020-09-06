@@ -13,7 +13,7 @@ export default function Header() {
       {user ? (
         <h4 className="topbar__greeting">
           Welcome, {user.email.split("@")[0]}{" "}
-          <i class="topbar__greeting__icon fas fa-chevron-down"></i>
+          <i className="topbar__greeting__icon fas fa-chevron-down"></i>
         </h4>
       ) : (
         <div className="topbar__actions">

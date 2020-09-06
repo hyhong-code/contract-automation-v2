@@ -37,8 +37,11 @@ export default function GetStarted() {
 
           <div>
             <span className="get-started__question">Looking to create a </span>
-            <select className="get-started__input">
-              <option selected value="Non-Disclosure Agreement">
+            <select
+              className="get-started__input"
+              defaultValue="Non-Disclosure Agreement"
+            >
+              <option value="Non-Disclosure Agreement">
                 Non-Disclosure Agreement
               </option>
               <option disabled value="Option2">

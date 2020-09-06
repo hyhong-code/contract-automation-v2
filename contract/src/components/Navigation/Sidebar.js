@@ -7,10 +7,10 @@ const Sidebar = () => {
     <nav className="sidebar">
       <div className="sidebar__icons">
         <a href="#!" className="sidebar__icons-box">
-          <i class="sidebar__icons-icon far fa-sticky-note"></i>
+          <i className="sidebar__icons-icon far fa-sticky-note"></i>
         </a>
         <a href="#!" className="sidebar__icons-box">
-          <i class="sidebar__icons-icon far fa-user-circle"></i>
+          <i className="sidebar__icons-icon far fa-user-circle"></i>
         </a>
       </div>
     </nav>

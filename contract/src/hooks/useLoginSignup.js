@@ -17,7 +17,7 @@ const useLoginSignup = () => {
     } else {
       setLoginSignup(false);
     }
-  }, [location.pathname, setLoginSignup]);
+  }, [location.pathname, setLoginSignup, path]);
   return isLoginSignup;
 };
 

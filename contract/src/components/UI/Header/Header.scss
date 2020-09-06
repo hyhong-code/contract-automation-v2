@@ -17,6 +17,7 @@
   .topbar__greeting {
     font-size: 1.125rem;
     font-weight: 400;
+    margin: 0;
     color: #000000;
 
     .topbar__greeting__icon {
@@ -26,6 +27,7 @@
 
   .topbar__actions {
     display: flex;
+    align-items: center;
 
     .topbar__btn {
       &:first-child {

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+import path from "../../../utils/path";
+
 import Box from "@material-ui/core/Box";
 import TextField from "@material-ui/core/TextField";
 import Paper from "@material-ui/core/Paper";
@@ -56,7 +58,7 @@ const Login = () => {
         console.log(res.data);
         if (res.data.token) {
           localStorage.setItem("JWT_TOKEN", res.data.token);
-          window.location = "/orgchart/app";
+          window.location = path("/getStarted");
         } else {
           throw new Error();
         }

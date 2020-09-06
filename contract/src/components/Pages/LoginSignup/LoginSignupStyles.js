@@ -44,5 +44,8 @@ export default makeStyles((theme) => ({
   brand: {
     marginLeft: "1rem",
     textDecoration: "none",
+    "&:hover": {
+      textDecoration: "none",
+    },
   },
 }));

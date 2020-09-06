@@ -8,7 +8,7 @@ const useLoginSignup = () => {
   const path =
     process.env.NODE_ENV === "production"
       ? ["/contract/signup", "/contract/login"]
-      : ["/signup", "login"];
+      : ["/signup", "/login"];
 
   useEffect(() => {
     // When user is on mainpage route, display main page navbar
